@@ -1,0 +1,4 @@
+---
+apt_chrome_repo: "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"
+apt_chrome_repo_key: "https://dl.google.com/linux/linux_signing_key.pub"
+
