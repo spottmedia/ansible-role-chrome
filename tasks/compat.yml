@@ -41,11 +41,11 @@
 
 - set_fact:
     backcompat_pkg_mgr: 'dnf'
-  when: ansible_os_family == 'RedHat' and dnf_result|success
+  when: ansible_os_family == 'RedHat' and dnf_result is success
 
 - set_fact:
     backcompat_pkg_mgr: '{{ansible_pkg_mgr}}'
-  when: ansible_os_family == 'RedHat' and dnf_result|failed
+  when: ansible_os_family == 'RedHat' and dnf_result is failed
 
 - set_fact:
     backcompat_pkg_mgr: '{{ansible_pkg_mgr}}'
